@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<title>Collatz conjecture</title>
+<body>
+<script>
+    var number= window.prompt("Enter a number");
+    var max=0;
+    var steps=0;
+    var run=true
+    document.write(`The sequence:\n ${number},\n`); 
+    document.write("\n")
+    while(run){
+        if (number>max){
+            max=number;
+        }
+        if (number==1){
+            run=false;
+            break;
+        }
+        
+
+        else{
+            if(number%2==0){
+                number/=2;
+                document.write(`${number},\n`);
+            }
+            else{
+                number=3*number+1
+                document.write(`${number},\n`);
+            }
+        }
+        steps++;
+    }
+    document.write(`${number} takes ${steps} steps to reach 1 and attains the maximum value of ${max}`)
+</script>
+
+</body>
+</html>

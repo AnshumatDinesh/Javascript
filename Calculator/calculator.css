@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(39,38,35);
+    color: rgb(191, 191, 191);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.numbered_button {
+    border-radius: 6px;
+    border: 5px solid rgb(34, 94, 66);
+    background-color:  rgb(15,41,29); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;}
+.numbered_button:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+      }
+.clear_button{
+    border-radius: 6px;
+    background-color:  rgb(110,30,10); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 30px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.backspace_button{
+    border-radius: 6px;
+    background-color:  rgb(110,30,10); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 18px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.function_button{
+    border-radius: 6px;
+    background-color:  rgb(42, 50, 120); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 18px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.sq_button{
+    border-radius: 6px;
+    background-color:  rgb(42, 50, 120); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 18px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.factorial_button{
+    border-radius: 6px;
+    background-color:  rgb(42, 50, 120); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 18px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.minus_button{
+    border-radius: 6px;
+    background-color:  rgb(42, 50, 120); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.divide_button{
+    border-radius: 6px;
+    background-color:  rgb(42, 50, 120); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.plus_button{
+    border-radius: 6px;
+    background-color:  rgb(42, 50, 120); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.function_button:hover {
+    background-color: rgb(61, 74, 183); /* Green */
+    color: white;
+}
+.sq_button:hover {
+    background-color: rgb(61, 74, 183); /* Green */
+    color: white;
+}
+.factorial_button:hover {
+    background-color: rgb(61, 74, 183); /* Green */
+    color: white;
+}
+.minus_button:hover {
+    background-color: rgb(61, 74, 183); /* Green */
+    color: white;
+}
+.divide_button:hover {
+    background-color: rgb(61, 74, 183); /* Green */
+    color: white;
+}
+.plus_button:hover {
+    background-color: rgb(61, 74, 183); /* Green */
+    color: white;
+}
+.clear_button:hover {
+    background-color: rgb(165,30,10); /* Green */
+    color: white;
+}
+.backspace_button:hover {
+    background-color: rgb(165,30,10); /* Green */
+    color: white;
+}

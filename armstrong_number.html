@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>Armstrong number</title>
+<body>
+<script>
+    function cube(a){
+        return a*a*a;
+    }
+    var number= window.prompt("Enter a number");
+    var num=number;
+    var total=0;
+    var run=true; 
+    while(run){
+        total+=cube(num%10)
+        num=Math.floor(num/10)
+        if (num<10){
+            total+=cube(num)
+            run=false;
+            break;
+        }
+    }
+    if(total==number){
+        document.write(`${number} is an armstrong number`)
+    }
+    else{
+        document.write(`${number} is not an armstrong number`)
+        }
+</script>
+
+</body>
+</html>

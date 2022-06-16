@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400&display=swap');
+#title{
+    color: rgba(186, 133, 9, 0.914);
+    font-family: "Inter", sans-serif;
+    
+}
+.subtitle{
+    color: rgba(219 ,168, 50, 0.914);
+}
+body{
+    background: url("https://img.freepik.com/free-vector/autumn-mountains-landscape-with-tree-silhouettes-river-sunset_148087-293.jpg?w=2000");
+    background-size: cover;
+    font-family: "Roboto",sans-serif;
+}
+#about-us-image{
+    height: 300px;
+    width: 30vw;
+}
