@@ -1,3 +1,6 @@
+*{
+    transition-duration: 500ms;
+}
 .red{
     cursor: pointer;
 }

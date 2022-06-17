@@ -5,6 +5,7 @@
 
 #r{
     color:rgb(128, 0, 0);
+    transition-duration: 1s ;
     text-align: left;
 }
 .bttn:hover{
@@ -12,9 +13,13 @@
 }
 #g{
     color:rgb(0, 128, 0);
+    transition-duration: 1s ;
+
 }
 #b{
     color:rgb(0, 0, 128);
+    transition-duration: 1s ;
+
 }
 #inc{
     background-color: #00cf07; /* Green */
