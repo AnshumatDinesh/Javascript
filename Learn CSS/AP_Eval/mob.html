@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    @import url();
+*{
+    transition-duration: 500ms;
+
+}
+body{
+    color: white;
+    background: linear-gradient(to right,rgb(16, 42, 102),rgb(114, 35, 225));
+    
+
+}
+.master-content{
+    width:95vw;
+    margin-top: 15vh;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: row;
+    
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+.nav-items:hover{
+    transform: translateY(-1vh) scale(1.3);
+    box-shadow: -0.4vw 1vh rgba(46, 46, 46, 0.513);
+    text-decoration: underline;
+}
+.image{
+    width: 45vw;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 2vw;
+}
+.nav-items{
+    font-size: 1.5vw;
+}
+.logo{
+    margin-right: 20vw;
+    width:10vw;
+}
+.logo:hover{
+    transform: translateX(3vw) scale(1.3);
+
+}
+
+.nav-signin{
+    margin-left:7vw ;
+    font-size: 1.5vw;
+    background-color: orange;
+    padding: 1vh 1vw;
+    border:0 ;
+    box-shadow: -0.4vw 1vh rgba(46, 46, 46, 0.513);
+    border-radius: 8vw;
+    
+
+}
+.frtrial{
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    background-color: orange;
+    padding: 2vh 3vw;
+}
+.frtrial:hover{
+    transform: translateX(2.5vw) scale(1.5);
+    background-color: rgba(152, 99, 0, 0.65);  
+}
+#email:hover{
+    transform: translateX(-1vw) scale(1.3); 
+}
+#email{
+    padding: 0px 5vw;
+    font-style: italic;
+}
+.input-container{
+    display: flex;
+}
+.nav-signin:hover{
+    transform: translateY(-1vh) translateX(-1vw) scale(1.3);
+    background-color: rgba(152, 99, 0, 0.539);
+    box-shadow: none;  
+}
+.image-container:hover{
+    transform: translateY(-1vh) scale(1.3);
+}
+.gender{
+    display: flex;
+
+}
+.gender-item{
+    color: black;
+    padding: 4px 8px;
+    background-color: white;
+    border:  1px solid black;
+}
+.gender-item:hover{
+    background-color: green;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap:7vw;
+}
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img class="logo"src="https://images.vectorhq.com/images/previews/214/generic-logo-140952.png" alt="Logo"/>
+
+        </div>
+        <div class="home">
+            <a href="" class="nav-link">
+                <h1 class="nav-items">Home</h1>
+            </a>
+        </div>
+        <div class="about">
+            <a href="" class="nav-link">
+                <h1 class="nav-items">About</h1>
+            </a>
+        </div>
+        <div class="feature">
+            <a href="" class="nav-link">
+                <h1 class="nav-items">Features</h1>
+            </a>
+        </div>
+        <div class="showcase">
+            <a href="" class="nav-link">
+                <h1 class="nav-items">Showcase</h1>
+            </a>
+        </div>
+        <div class="Pricing">
+            <a href="" class="nav-link">
+                <h1 class="nav-items">Pricing</h1>
+            </a>
+        </div>
+        <div class="Team">
+            <a href="" class="nav-link">
+                <h1 class="nav-items">Team</h1>
+            </a>
+        </div>
+        <div class="Blog">
+            <a href="" class="nav-link">
+                <h1 class="nav-items">Blog</h1>
+            </a>
+        </div>
+        <div class="Contact">
+            <a href="" class="nav-link">
+                <h1 class="nav-items">Contact</h1>
+            </a>
+        </div>
+        <div class="Signin">
+            <a href="www.google.com" target="_blank" class="nav-link">
+                <h1 class="nav-signin">Sign In</h1>
+            </a>
+        </div>
+    </div>
+    <div class="master-content">
+        <div class="content">
+            <h1>
+                Grow Your Business With Us
+            </h1>
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nisi odio error id eos excepturi illum esse, explicabo obcaecati porro cumque velit omnis eum quibusdam perferendis ullam amet voluptatibus atque earum. Quia.</p>
+            <form action="" class="email-form">
+                <div class="input-container">
+                    <input type="text" name="" id="email" placeholder="✉         Enter Your Email ">
+                    <button class="frtrial">Free Trial</button>
+                </div>
+            </form>
+            <p class="disclamer">
+                *No credit cards required
+            </p>
+        </div>
+        <div class="image-container">
+            <img class="image"src="https://www.thinkcompany.com/wp-content/uploads/2021/04/ADP_TiltedBackRight-1.png" height="451px" width="506px" alt="">
+        </div>
+        <!-- https://c.tenor.com/KwRAYz0KfWUAAAAC/nueva-creative-phone.gif -->
+    </div>
+    <div class="gender">
+
+            <button class="gender-item">Male</button>
+
+            <button class="gender-item" >Female</button>
+    </div>
+    <div class="btn">
+        <p class="q23">Gender</p>
+        <input class="q23" type="radio" name="1" id="">male</input>
+        <input class="q23" type="radio" name="1" id="">male</input>
+        <input class="q23" type="radio" name="1" id="">male</input>
+        <input class="q23" type="radio" name="1" id="">male</input>
+    </div>
+</body>
+</html>
