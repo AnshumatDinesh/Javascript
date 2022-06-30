@@ -1,5 +1,50 @@
 let num_memory=0;
 let curr_op=""
+function square(){
+    let display=document.getElementById("display");
+    display.innerHTML=String(parseFloat(display.innerHTML)*parseFloat(display.innerHTML))
+}
+function neg(){
+    let display=document.getElementById("display");
+    console.log(display.innerHTML)
+    display.innerHTML=String(-1*parseFloat(display.innerHTML));
+}
+function root(){
+    let display=document.getElementById("display");
+    if(parseFloat(display.innerHTML)<0){
+        display.innerHTML="ERROR";
+        return;
+    }
+    display.innerHTML=Math.sqrt(parseFloat(display.innerHTML));
+}
+function inverse(){
+    let display=document.getElementById("display");
+    if(parseFloat(display.innerHTML)==0.0){
+        display.innerHTML="ERROR";
+        return;
+    }
+    display.innerHTML=String(1/parseFloat(display.innerHTML));
+}
+function fact(){
+    let display=document.getElementById("display");
+    if(parseFloat(display.innerHTML)<0 || display.innerHTML.includes('.')){
+        display.innerHTML="ERROR";
+        return;
+    }
+    let fact=1;
+    for(let i=2;i<=parseInt(display.innerHTML);i++){
+        fact*=i;
+    }
+    display.innerHTML=String(fact);
+}
+function decimal(){
+    let display=document.getElementById("display");
+    if(display.innerHTML.includes(".")){
+        console.log("||")
+        return
+    }
+    display.innerHTML=display.innerHTML+"."
+}
 function backspace(){
     let a=document.getElementById("display").innerHTML;
     let a_cpy="";
@@ -10,6 +55,11 @@ function backspace(){
     document.getElementById("display").innerHTML=a;
 }
 function clr(){
+    let a=document.getElementById("display").innerHTML;
+    a="";
+    document.getElementById("display").innerHTML=a;
+}
+function allclr(){
     let a=document.getElementById("display").innerHTML;
     a="";
     curr_op="";
@@ -26,7 +76,7 @@ function addnumber(n){
 }
 function operator(o){
     let a=document.getElementById("display").innerHTML;
-    num_memory=parseInt(a);
+    num_memory=parseFloat(a);
     console.log(num_memory)
     curr_op=o;
     a="";
@@ -34,7 +84,7 @@ function operator(o){
 }
 function equal(){
     let a=document.getElementById("display").innerHTML;
-    let num2=parseInt(a)
+    let num2=parseFloat(a)
     switch (curr_op) {
         case '+':
                 console.log(num_memory+num2);

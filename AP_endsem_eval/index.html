@@ -7,31 +7,97 @@
 </head>
 <body>
     <form action="">
-        <div class="display-container">
-            <h1 id="display"></h1>
-        </div>
-        <div class="keypad">
-        <input type="button" class="number" value="7" onclick="addnumber(7)">
-        <input type="button" class="number" value="8" onclick="addnumber(8)">
-        <input type="button" class="number" value="9" onclick="addnumber(9)">
-        <input type="button" class="operator" value="+" onclick="operator('+')">
-        <br>
-        <input type="button" class="number" value="4" onclick="addnumber(4)">
-        <input type="button" class="number" value="5" onclick="addnumber(5)">
-        <input type="button" class="number" value="6" onclick="addnumber(6)">
-        <input type="button" class="operator" value="-" onclick="operator('-')">
-        <br>
-        <input type="button" class="number" value="1" onclick="addnumber(1)">
-        <input type="button" class="number" value="2" onclick="addnumber(2)">
-        <input type="button" class="number" value="3" onclick="addnumber(3)">
-        <input type="button" class="operator" value="*" onclick="operator('*')">
-        <br>
-        <input type="button" class="fnc" value="bck" onclick="backspace()">
-        <input type="button" class="number" value="0" onclick="addnumber(0)">
-        <input type="button" class="fnc" value="clr" onclick="clr()">
-        <input type="button" class="operator" value="/" onclick="operator('/')">
-        <input type="button" class="equal" value="=" onclick="equal()">
-        </div>
+        <div class="calc">
+            <div class="display-container">
+                <h1 id="display"></h1>
+            </div>
+            <div class="keypad">
+                <div class="row1">
+                    <div class="row1-element unary" onclick="fact()">
+                        <p>!</p>
+                    </div>
+                    <div class="row1-element fnc" onclick="allclr()">
+                        <p>AC</p>
+                    </div>
+                    <div class="row1-element fnc" onclick="clr()">
+                        <p>C</p>
+                    </div>
+                    <div class="row1-element fnc" onclick="backspace()">
+                        <p>⌫</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="row1-element unary" onclick="inverse()">
+                        <p>1/x</p>
+                    </div>
+                    <div class="row1-element unary" onclick="square()">
+                        <p>x²</p>
+                    </div>
+                    <div class="row1-element unary" onclick="root()">
+                        <p>√x</p>
+                    </div>
+                    <div class="row1-element operator" onclick="operator('/')">
+                        <p>÷</p>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="row1-element number" onclick="addnumber(7)">
+                        <p>7</p>
+                    </div>
+                    <div class="row1-element number" onclick="addnumber(8)">
+                        <p>8</p>
+                    </div>
+                    <div class="row1-element number" onclick="addnumber(9)">
+                        <p>9</p>
+                    </div>
+                    <div class="row1-element operator" onclick="operator('*')">
+                        <p>X</p>
+                    </div>
+                </div>
+                <div class="row4">
+                    <div class="row1-element number" onclick="addnumber(4)">
+                        <p>4</p>
+                    </div>
+                    <div class="row1-element number" onclick="addnumber(5)">
+                        <p>5</p>
+                    </div>
+                    <div class="row1-element number" onclick="addnumber(6)">
+                        <p>6</p>
+                    </div>
+                    <div class="row1-element operator" onclick="operator('-')">
+                        <p>-</p>
+                    </div>
+                </div>
+                <div class="row5">
+                    <div class="row1-element number" onclick="addnumber(1)">
+                        <p>1</p>
+                    </div>
+                    <div class="row1-element number" onclick="addnumber(2)">
+                        <p>2</p>
+                    </div>
+                    <div class="row1-element number" onclick="addnumber(3)">
+                        <p>3</p>
+                    </div>
+                    <div class="row1-element operator" onclick="operator('+')">
+                        <p>+</p>
+                    </div>
+                </div>
+                <div class="row6">
+                    <div class="row1-element fnc" onclick="neg()">
+                        <p>-/+</p>
+                    </div>
+                    <div class="row1-element number" onclick="addnumber(0)">
+                        <p>0</p>
+                    </div>
+                    <div class="row1-element fnc" onclick="decimal()">
+                        <p>.</p>
+                    </div>
+                    <div class="row1-element equal" onclick="equal()">
+                        <p>=</p>
+                    </div>
+                </div>
+            </div>
+    </div>
     </form>
 </body>
 </html>
