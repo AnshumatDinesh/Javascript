@@ -1,23 +1,17 @@
-*{
-    color: antiquewhite;
-}
+*{color: antiquewhite;}
 body{
     background-color: rgba(27, 25, 25, 0.864);
 }
-.number{
+.number,.operator,.equal{
     border-radius: 12px;
     background-color:rgb(34, 27, 27) ;
     padding: 15px 18px;
 }
 .operator{
-    border-radius: 12px;
     background-color:rgb(28, 26, 56) ;
-    padding: 15px 18px;
 }
 .equal{
-    border-radius: 12px;
     background-color:rgb(53, 6, 6) ;
-    padding: 15px 18px;
 }
 .fnc{
     font-size: 8px;
