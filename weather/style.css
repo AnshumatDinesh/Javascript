@@ -1,0 +1,26 @@
+*{
+    color: antiquewhite;
+}
+.navbar{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: antiquewhite;
+}
+a:visited{
+    color: antiquewhite;
+}
+body{
+    background: linear-gradient(to right,rgba(13, 0, 132, 0.823),rgba(16, 28, 153, 0.522));
+}
+.logo-link{
+    cursor:auto;
+}
+.logo{
+    width: 100px;
+}
