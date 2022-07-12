@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="hello.php" method="post">
+    <form action="basic_calc.php" method="post">
         <input type="number" name="num1"> 
         <select name="operator">
             <option value="+">+</option>
